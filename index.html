@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#061a4d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>BASRENG RE GROUP</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./logo.png">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #061a4d;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbyeASkEGU2x5PB3F1_KSELAy0QiE5mdqdwMxAirz2N7d5xOjjDNzXYBet0nXVkUIX0S9Q/exec"></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+</body>
+</html>
